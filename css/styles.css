@@ -18,10 +18,13 @@ body {
     color: var(--primary-text-color);
 }
 .container {
-    width: 1160px;
+    width: 1158px;
     padding: 0px, 15px;
     margin-left: auto;
     margin-right: auto;
+}
+.section {
+    padding-top: 120px;
 }
 .centered {
     text-align: center;
@@ -211,10 +214,7 @@ p {
 }
 
 /* section features */
-.features {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
+
 
 .features-list {
     display: flex;
@@ -257,16 +257,19 @@ p {
     font-weight: 700;
     margin-bottom: 72px;
 }
+
 .what-list {
     display: flex;
+}
+.what-item {
     margin-right: 24px;
 }
-.what-list:last-child {
+.what-item:last-child {
     margin-right: 0;
 }
 .section-what {
-    background-color: var(--complementary-color);
-    margin-bottom: 240px;
+    background-color: var(--buttons-color-hover);
+    
 
 }
 
@@ -274,7 +277,7 @@ p {
 
 .team {
     background-color: var(--complementary-color2);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .team-header {
     color: var(--primary-text-color);
@@ -302,7 +305,7 @@ p {
 .team-item {
     margin-right: 24px;
 }
-..team-item:last-child {
+.team-item:last-child {
     margin-right: 0;
 }
 
@@ -438,6 +441,8 @@ p {
     font-weight: 700;
     line-height: 1.2;
     font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .portfolio-link {
@@ -454,21 +459,26 @@ p {
 .potfolio-list {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 96px;
     margin-bottom: 72px;
 }
 .butons-item {
     margin-right: 24px;
 }
+.butons-item:last-child {
+    margin-right: 0;
+}
 .portfolio-img {
     display: flex;
     flex-wrap: wrap;
-    background-color: teal;
+    margin-bottom: 120px;
 }
+
+
 .portfolio-item-img {
-    margin-right: 24px;
-    background-color: tomato;
     margin-bottom: 48px;
+    margin-right: 24px;
+    width: 360px;
 }
 
 .portfolio-item-img:nth-last-child(-n+3) {
@@ -476,6 +486,11 @@ p {
 }
 .portfolio-item-img:nth-child(3n) {
     margin-right: 0px;
+}
+
+.header {
+    border-bottom: 1px solid rgba(46, 47, 66, 0.16);
+    
 }
 
 
